@@ -41,9 +41,10 @@ SECRET_KEY = 'django-insecure-53#1iew&#7w(+71id3%pm=eh@s!7_mz!+p7any_jf*wiipdq2(
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    "127.0.0.1",
     "0.0.0.0",
-    '127.0.0.1',
-]
+] + getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
+
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
