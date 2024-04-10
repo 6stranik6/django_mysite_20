@@ -43,7 +43,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "0.0.0.0",
-] + getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
+] + os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
 
 INTERNAL_IPS = [
     '127.0.0.1',
