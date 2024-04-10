@@ -1,0 +1,2 @@
+2024-02-13 20:35:05,551 [INFO] django.utils.autoreload: /home/aleczender/PycharmProjects/django_20/mysite/shopapp/views.py changed, reloading.
+2024-02-13 20:35:06,394 [INFO] django.utils.autoreload: Watching for file changes with StatReloader

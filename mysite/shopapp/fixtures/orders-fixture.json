@@ -1,0 +1,29 @@
+[
+  {
+    "fields": {
+      "delivery_address": "sffdg efe",
+      "promocode": "",
+      "created_at": "2024-01-05T20:18:01.721Z",
+      "user": 2,
+      "products": [
+        1,
+        2
+      ]
+    },
+    "model": "shopapp.order",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "delivery_address": "ass sdds",
+      "promocode": "",
+      "created_at": "2024-01-05T20:18:37.441Z",
+      "user": 1,
+      "products": [
+        1,
+        2
+      ]
+    },
+    "model": "shopapp.order",
+    "pk": 2
+  }]

@@ -1,0 +1,39 @@
+{% extends "shopapp/base.html" %}
+
+{% block title %}
+    Shop Title
+{% endblock %}
+
+{% block body %}
+<h1>Hello Shop World!</h1>
+<div>
+    {{ products|first }}
+    <ul>
+        {% firstof products  %}
+    </ul>
+
+    <ul>
+        {% comment "Проверка тега комментирования" %}
+            <p>Текс который закомментирован</p>
+        {% endcomment %}
+        {% for name, prise in products %}
+            <li>{{name|capfirst}} for ${{prise}} </li>
+            {% if name|length_is:"7" %}
+                <span>Lucky product!</span>
+
+            {% endif %}
+        {% empty %}
+            No products here
+        {% endfor %}
+    </ul>
+</div>
+
+<div>
+    Time running: {{time_running}}
+</div>
+
+<div>
+    {% lorem 3 p random %}
+</div>
+
+{% endblock %}

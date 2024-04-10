@@ -1,0 +1,24 @@
+{% extends 'shopapp/base.html' %}
+{% load cache %}
+
+{% block title %}
+    order {{ object_list.user }} list
+{% endblock %}
+
+{% block body %}
+    <h1>Orders {{ object_list.user }}:</h1>
+    {% if object_list.orders %}
+        <div>
+        {%  cache 100 orders object_list.user %}
+        {% for order in object_list.orders %}
+            <p>Order #{{ order.pk }}</p>
+            <p>Promocode: <code>{{ order.promocode }}</code></p>
+            <p>Delivery address: {{ order.delivery_address }}</p>
+        <div>
+            {% endfor %}
+        {% endcache %}
+    {% else %}
+        <h3>No orders yet</h3>
+    {% endif %}
+
+{% endblock %}

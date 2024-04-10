@@ -1,0 +1,31 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+    Article list
+{% endblock %}
+
+{% block body %}
+    <h1>Article:</h1>
+    {% if articles %}
+        <div>
+        {% for article in articles %}
+            <p>
+                <a href="{% url 'blogapp:article_details' pk=article.pk %}">Title: {{ article.title }}</a>
+            </p>
+            <p>Author: {{ article.author.name }}</p>
+            <p>Date published: {{ article.pub_date }}</p>
+            <p>Category: {{ article.category.name }}</p>
+            <p>Tag: {% for tag in article.tags.all %}
+        	        {{ tag.name }}
+                {% endfor %}
+            </p>
+
+        {% endfor %}
+
+        </div>
+    {% else %}
+        <h3>No article yet</h3>
+    {% endif %}
+
+
+{% endblock %}

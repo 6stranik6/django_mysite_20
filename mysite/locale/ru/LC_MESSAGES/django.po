@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-10 17:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>19) ? 1 : 2); \n"
+
+#: myauth/views.py:122
+msgid "Hello World!"
+msgstr "Привет, Мир!"
+
+#: mysite/settings.py:135
+msgid "English"
+msgstr "Английский"
+
+#: mysite/settings.py:136
+msgid "Russian"
+msgstr "Русский"
+
+#: shopapp/models.py:17 shopapp/templates/shopapp/products-details.html:6
+#: shopapp/templates/shopapp/products-details.html:10
+msgid "Product"
+msgstr "Продукт"
+
+#: shopapp/models.py:51
+msgid "Order"
+msgstr ""
+
+#: shopapp/templates/shopapp/products-details.html:12
+msgid "Description"
+msgstr "Описание"
+
+#: shopapp/templates/shopapp/products-details.html:13
+msgid "Price"
+msgstr "Цена"
+
+#: shopapp/templates/shopapp/products-details.html:14
+msgid "Discount"
+msgstr "Скидка"
+
+#: shopapp/templates/shopapp/products-details.html:15
+msgid "Created by"
+msgstr "Создан"
+
+#: shopapp/templates/shopapp/products-details.html:16
+msgid "Archived"
+msgstr "В архиве"
+
+#: shopapp/templates/shopapp/products-details.html:21
+msgid "Images"
+msgstr "Изображение"
+
+#: shopapp/templates/shopapp/products-details.html:29
+msgid "No images uploaded yet"
+msgstr "Изображение еще не загружено"
+
+#: shopapp/templates/shopapp/products-details.html:35
+#, python-format
+msgid ""
+"\n"
+"            One image\n"
+"        "
+msgid_plural ""
+"\n"
+"            %(images_count)s images\n"
+"        "
+msgstr[0] ""
+"\n"
+"            %(images_count)s изображение\n"
+"        "
+msgstr[1] ""
+"\n"
+"            %(images_count)s изображения\n"
+"        "
+msgstr[2] ""
+"\n"
+"            %(images_count)s изображений\n"
+"        "
+
+#: shopapp/templates/shopapp/products-details.html:45
+#, python-format
+msgid ""
+"\n"
+"        <a href=\"%(update)s\">Update product</a>\n"
+"    </div>\n"
+"    <div>\n"
+"        <a href=\"%(delete)s\">Archive product</a>\n"
+"    </div>\n"
+"    <div>\n"
+"        <a href=\"%(back)s\">Back to products list</a>\n"
+"    </div>\n"
+"    "
+msgstr ""
+"\n"
+"        <a href=\"%(update)s\">Изменить продукт</a>\n"
+"    </div>\n"
+"    <div>\n"
+"        <a href=\"%(delete)s\">Переместить продукт в архив</a>\n"
+"    </div>\n"
+"    <div>\n"
+"        <a href=\"%(back)s\">Вернутся к списку продуктов</a>\n"
+"    </div>\n"
+"    "

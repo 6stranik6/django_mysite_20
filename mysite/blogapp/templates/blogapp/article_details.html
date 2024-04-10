@@ -1,0 +1,23 @@
+{% extends "myauth/base.html" %}
+
+{% block title %}
+	Article #{{ object.pk }}
+{% endblock %}
+
+{% block body %}
+	<h1>Article info:</h1>
+
+        <p>Title: {{ object.title }}</p>
+        <p>Content: {{ object.content }}</p>
+        <p>Author: {{ object.author.name }}</p>
+        <p>Date published: {{ object.pub_date }}</p>
+        <p>Category: {{ object.category.name }}</p>
+        <p>Tag: {% for tag in object.tags.all %}
+        	{{ tag.name }}
+        {% endfor %}
+        </p>
+
+    <div>
+        <a href="{% url 'blogapp:article_list' %}">Back to article list</a>
+    </div>
+{% endblock %}
